@@ -11,13 +11,8 @@ class Planet{
 
 	calculateLifeTime(){
 		let input = prompt("Lifetime in Seconds");
-		// let inputPlanet = prompt("Choose Planet");
-		// switch(this.name){
-		// 	case "Mercury": return (input/31337600)/this.orbitalPeriode
-		// }
-		return (input/31337600)/this.orbitalPeriode;
+		return (input/31557600)/this.orbitalPeriode;
 	}
-
 }
 
 var mercury = new Planet("Mercury",0.2408467);
@@ -29,12 +24,4 @@ var uranus = new Planet("Uranus", 84.016846);
 var neptun = new Planet("Neptun", 164.79132);
 
 let promptplanet = prompt("choose planet");
-console.log(promptplanet);
-switch(promptplanet){
-	case "mercury": console.log(mercury.calculateLifeTime());
-					break;
-
-}
-//var yourplanet = new Planet(promptplanet,)
-//console.log(promptplanet.calculateLifeTime());
-
+console.log(window[promptplanet].calculateLifeTime());
