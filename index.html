@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <script>
+    class Person {
+        name = "";
+        age = "";
+        jobTitle = "";
+
+        constructor(name, age, jobTitle) {
+            this.name = name;
+            this.age = age;
+            this.jobTitle = jobTitle;
+        }
+        name() { 
+            return `Hello there ${this.name} and I am ${this.age} years old, and I am a${this.jobTitle} `;
+        }
+    }
+    var person1 = new Person("Jon Doe", "33", "boss");
+
+    console.log(person1.jobTitle);
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
