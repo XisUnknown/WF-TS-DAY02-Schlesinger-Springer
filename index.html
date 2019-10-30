@@ -5,33 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
 
-    <script>
-    class Person {
-        name = "";
-        age = "";
-        jobTitle = "";
-
-        constructor(name, age, jobTitle) {
-            this.name = name;
-            this.age = age;
-            this.jobTitle = jobTitle;
-        }
-        namE() { 
-            return `Hello there ${this.name} and I am ${this.age} years old, and I am a ${this.jobTitle} `;
-        }
-    }
-    var person1 = new Person("Jon Doe", "33", "boss");
-
-    console.log(person1.namE());
-    $("body").append(`
-      <p> ${(person1.namE())}</p>
-    `);
-    </script>
 </head>
 
 <body>
+    <script src="test.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 
 </html>
